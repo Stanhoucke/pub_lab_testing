@@ -42,19 +42,34 @@ class TestPub(unittest.TestCase):
         self.assertEqual(self.tennents, self.pub.find_drink_by_name(order_1))
         self.assertEqual(None, self.pub.find_drink_by_name(order_2))
 
+    def test_check_age(self):
+        self.assertEqual(True, self.pub.check_age(self.customer_2))
+        self.assertEqual(False, self.pub.check_age(self.customer_3))
+
+    def test_check_drunkeness(self):
+        for i in range(5):
+            self.customer_1.increase_customer_drunkeness(self.tennents)
+        self.assertEqual(True, self.pub.check_drunkeness(self.customer_1))
+        self.assertEqual(False, self.pub.check_drunkeness(self.customer_2))
+
     def test_buy_a_drink(self):
-        # Arrange
-        customer_1 = self.customer_1
-        customer_2 = self.customer_2
+            # Arrange
 
-        order_1 = self.tennents.name
-        order_2 = self.shiraz.name
-        # Act
-        self.pub.buy_a_drink(customer_1, order_1)
-        self.pub.buy_a_drink(customer_2, order_2)
+            # Act
+            self.pub.buy_a_drink(self.customer_1, self.tennents.name)
+            self.pub.buy_a_drink(self.customer_2, self.shiraz.name)
+            self.pub.buy_a_drink(self.customer_3, self.stella.name)
+            self.pub.buy_a_drink(self.customer_1, self.stella.name)
+            self.pub.buy_a_drink(self.customer_1, self.fosters.name)
+            self.pub.buy_a_drink(self.customer_1, self.carling.name)
+            self.pub.buy_a_drink(self.customer_1, self.guiness.name)
 
-        # Assert
 
-        self.assertEqual(45.05, self.customer_1.wallet)
-        self.assertEqual(0.50, self.customer_2.wallet)
-        self.assertEqual(104.95, self.pub.till)
+            # Assert
+            self.assertEqual(25.10, self.customer_1.wallet)
+            self.assertEqual(0.50, self.customer_2.wallet)
+            self.assertEqual(50.00, self.customer_3.wallet)
+            self.assertEqual(124.9, self.pub.till)
+            self.pub.buy_a_drink(self.customer_1, self.tennents.name)
+            self.assertEqual(25.10, self.customer_1.wallet)
+
