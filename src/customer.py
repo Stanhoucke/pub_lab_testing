@@ -4,5 +4,8 @@ class Customer():
         self.name = name
         self.wallet = wallet
 
-    def buy_a_drink(self, drink):
+    def can_afford(self, drink):
+        return self.wallet >= drink.price
+
+    def remove_money_from_wallet(self, cash):
         pass

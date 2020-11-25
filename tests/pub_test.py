@@ -24,4 +24,3 @@ class TestPub(unittest.TestCase):
     def test_pub_has_stock(self):
         self.assertEqual(5, len(self.pub.drinks))
 
-
