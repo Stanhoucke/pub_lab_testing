@@ -17,8 +17,8 @@ class TestPub(unittest.TestCase):
         
         self.pub = Pub("The Prancing Pony", 100.00, stock)
 
-        self.customer_1 = Customer("Dave", 50.00)
-        self.customer_2 = Customer("Freddy", 0.50)
+        self.customer_1 = Customer("Dave", 50.00, 56)
+        self.customer_2 = Customer("Freddy", 0.50, 21)
 
     def test_pub_has_name(self):
         self.assertEqual("The Prancing Pony", self.pub.name)

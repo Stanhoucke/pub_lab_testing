@@ -4,8 +4,8 @@ from src.drink import Drink
 
 class TestCustomer(unittest.TestCase):
     def setUp(self):
-        self.customer_1 = Customer("Dave", 50.00)
-        self.customer_2 = Customer("Freddy", 0.50)
+        self.customer_1 = Customer("Dave", 50.00, 56)
+        self.customer_2 = Customer("Freddy", 0.50, 21)
 
         self.tennents = Drink("Tennents", 4.95, 2.2)
 
