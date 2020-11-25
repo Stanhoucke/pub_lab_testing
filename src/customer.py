@@ -8,4 +8,4 @@ class Customer():
         return self.wallet >= drink.price
 
     def remove_money_from_wallet(self, cash):
-        pass
+        self.wallet -= cash

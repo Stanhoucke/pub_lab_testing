@@ -20,3 +20,8 @@ class TestCustomer(unittest.TestCase):
         cant_afford = self.customer_2.can_afford(self.tennents)
         self.assertEqual(True, can_afford)
         self.assertEqual(False, cant_afford)
+
+    def test_remove_from_wallet(self):
+        price_of_item = 5.00
+        self.customer_1.remove_money_from_wallet(price_of_item)
+        self.assertEqual(45.00, self.customer_1.wallet)
