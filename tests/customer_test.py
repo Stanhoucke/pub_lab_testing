@@ -17,4 +17,6 @@ class TestCustomer(unittest.TestCase):
 
     def test_customer_can_afford(self):
         can_afford = self.customer_1.can_afford(self.tennents)
+        cant_afford = self.customer_2.can_afford(self.tennents)
         self.assertEqual(True, can_afford)
+        self.assertEqual(False, cant_afford)
