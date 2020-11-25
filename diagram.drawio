@@ -1,4 +1,4 @@
-<mxfile host="65bd71144e" modified="2020-11-25T12:11:36.111Z" agent="5.0 (Macintosh; Intel Mac OS X 11_0_1) AppleWebKit/537.36 (KHTML, like Gecko) Code/1.51.1 Chrome/83.0.4103.122 Electron/9.3.3 Safari/537.36" etag="sTdoRw0cKm4FoSpj8Zsx" version="13.6.5" pages="2">
+<mxfile host="65bd71144e" modified="2020-11-25T12:11:41.408Z" agent="5.0 (Macintosh; Intel Mac OS X 11_0_1) AppleWebKit/537.36 (KHTML, like Gecko) Code/1.51.1 Chrome/83.0.4103.122 Electron/9.3.3 Safari/537.36" etag="DhyeUoek0FrikDZ9FvN0" version="13.6.5" pages="2">
     <diagram id="X01LXl2BVp3HC27m_Xto" name="Page-1">
         <mxGraphModel dx="1016" dy="420" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
             <root>
@@ -69,7 +69,7 @@
                 <mxCell id="liYBBFmbBSNLe3TEAUrR-28" value="can_afford(drink)" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="24">
                     <mxGeometry y="120" width="220" height="26" as="geometry"/>
                 </mxCell>
-                <mxCell id="liYBBFmbBSNLe3TEAUrR-30" value="remove_money_from_wallet()(int)" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="24">
+                <mxCell id="liYBBFmbBSNLe3TEAUrR-30" value="remove_money_from_wallet()(float)" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="24">
                     <mxGeometry y="146" width="220" height="26" as="geometry"/>
                 </mxCell>
             </root>
