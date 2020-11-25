@@ -6,12 +6,12 @@ from src.customer import Customer
 class TestPub(unittest.TestCase):
     def setUp(self):
 
-        self.tennents = Drink("Tennents", 4.95)
-        self.stella = Drink("Stella", 5.50)
-        self.fosters = Drink("Fosters", 4.00)
-        self.carling = Drink("Carling", 4.50) 
-        self.guiness = Drink("Guiness", 5.95)
-        self.shiraz = Drink("Shiraz", 7.95)
+        self.tennents = Drink("Tennents", 4.95, 2.2)
+        self.stella = Drink("Stella", 5.50, 3.5)
+        self.fosters = Drink("Fosters", 4.00, 1.5)
+        self.carling = Drink("Carling", 4.50, 1.7) 
+        self.guiness = Drink("Guiness", 5.95, 2.5)
+        self.shiraz = Drink("Shiraz", 7.95, 4.0)
         
         stock = [self.tennents, self.stella, self.fosters, self.carling, self.guiness]
         
