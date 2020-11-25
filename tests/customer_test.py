@@ -33,3 +33,7 @@ class TestCustomer(unittest.TestCase):
 
     def test_customer_starts_sober(self):
         self.assertEqual(0, self.customer_3.drunkeness)
+
+    def test_increase_customer_drunkeness(self):
+        self.customer_1.increase_customer_drunkeness(self.tennents)
+        self.assertEqual(2.2, self.customer_1.drunkeness)
